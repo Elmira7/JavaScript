@@ -64,7 +64,6 @@ function filter_symbol(text){
     new_text=new_text+text[0];
     for(let i=1;i<text.length;i++){
         let c=new_text.indexOf(text[i])
-        console.log(c,text[i]);
             if (c<0){
                 new_text=new_text+text[i];
             }
@@ -75,3 +74,14 @@ console.log(filter_symbol(text4));
 
 
 //55555555555555555555555555555555
+// Напишите функцию replaceAll(find, replace, str), которая заменяет в строке str все вхождение подстроки find на подстроку replace.
+let find="qwert "
+let replace=" zxcv"
+str="qwert cvb qwert fgffngdsf dgdfsdzqwert"
+function replaceAll(find, replace, str){
+    while(str.indexOf(find)>0) {
+        str = str.replace(find, replace);
+    }
+    return str;
+}
+console.log(replaceAll(find, replace, str));
