@@ -92,7 +92,7 @@ console.log(replaceAll(find, replace, str));
 //11111111111111111111111111111111
 //Напишите функцию, которая убирает повторяющиеся значения в массиве  findIndex
 let arr=[1,4,52,1,4,6,2,6,7,1,3,5,8,9];
-function delete_repeat(arr){
+function deleteRepeat(arr){
     let new_arr=[];
     for(let i=0;i<arr.length;i++){
         if(arr.indexOf(arr[i])!==i){
@@ -104,7 +104,7 @@ function delete_repeat(arr){
     }
     return new_arr;
 }
-console.log(delete_repeat(arr));
+console.log(deleteRepeat(arr));
 
 //2222222222222222222222222222222222222
 //Напишите функцию, которая суммирует все значения элементов массива.
