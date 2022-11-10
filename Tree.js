@@ -13,7 +13,7 @@ class Tree {
     }
 
     add(value) {
-        const newNode = new Node(value)
+    const newNode = new Node(value)
         if (this.root === null) {
             this.root = newNode;
             return;
@@ -48,16 +48,16 @@ class Tree {
     traverseDFS(callback){
             return this.order(this.root,callback);
     }
-    traverseBFS(callback){
-        const q=[this.root];
-        while (q.length){
-            const node=q.shift();
-            callback(node);
-            if(node.left){
-                q.push(node.left)
-            }
-            if(node.right){
-                q.push(node.right);
+        traverseBFS(callback){
+            const q=[this.root];
+            while (q.length){
+                const node=q.shift();
+                callback(node);
+                if(node.left){
+                    q.push(node.left)
+                }
+                if(node.right){
+                    q.push(node.right);
             }
         }
 

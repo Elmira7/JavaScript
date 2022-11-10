@@ -1,0 +1,21 @@
+.layer{
+    z-index: -1;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+}
+.layer-1{
+    background: url("img/1618414694_2-phonoteka_org-p-nebo-fon-dlya-fotoshopa-4.jpg") center no-repeat;
+    background-size: cover;
+}
+.layer-2{
+    background: url("img/1614645328_10-p-ptitsi-na-belom-fone-dlya-fotoshopa-10.png") center no-repeat;
+    background-size: cover;
+}
+.layer-3{
+    background: url("img/7d03c300f31d73ef5be5e95950628d07.png") center no-repeat;
+    background-size: cover;
+
+}
